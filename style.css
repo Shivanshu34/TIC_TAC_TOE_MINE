@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin : 0;
+    padding : 0;
+}
+
+nav{
+    background-color: #332033;
+    height : 4vh;
+    width : 100%;
+    text-align : center;
+    color : rgb(237, 235, 235);
+    font-family: "Roboto", sans-serif;
+}
+
+.gameContainer{
+    height : 100vh;
+    width : 100%;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap : 85px;
+}
+
+.container{
+    height : 60vh;
+    width: 32%;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: repeat(3,2fr);   
+    position: relative; 
+}
+
+.box{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    border : 2px solid black;
+    cursor: pointer;
+}
+
+.box_text{
+    font-size : 40px;
+}
+
+.bl{
+    border-left : 0;
+}
+
+.br{
+    border-right : 0;
+}
+
+.bt{
+    border-top : 0;
+}
+
+.bb{
+    border-bottom : 0;
+}
+
+.box:hover{
+    background-color: rgb(220 194 220);
+}
+
+.Welcome{
+    height : 35vh;
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column; 
+    font-family: "Roboto", sans-serif;
+    gap : 15px;
+}
+
+.outer{
+    display : flex;
+    flex-wrap: wrap;
+}
+
+.reset{
+    width : 90px;
+    border-radius : 5px;
+    border : 1px solid black;
+    cursor: pointer;
+    height : 20px;
+    font-size : 15px;
+    margin-left : 25px;
+    padding : 5px;
+    padding-bottom: 19px;
+}
+
+.reset:hover{
+    box-shadow : 5px 2px 2px rgba(0,0,0,0.6);
+}
+
+.imageBox{
+    height: 99px; /*99*/
+    width: 0px;  /*113*/
+    background-image: url("Excited.webp");
+    background-size: cover;
+    transition : height 1s ease-in;
+    transition : width 1s ease-in;
+    margin-top : 75px;
+    margin-left : -369px;
+    border-radius : 5px;
+}
+
+.quit{
+    width : 70px;
+    border-radius : 5px;
+    border : 1px solid black;
+    cursor: pointer;
+    height : 20px;
+    font-size : 15px;
+    padding : 5px;
+    padding-bottom: 19px;
+    margin-top : 3px;
+    margin-left : 1184px;
+}
+
+.quit:hover{
+    box-shadow : 5px 2px 2px rgba(0,0,0,0.6);
+}
+
+.start{
+    height : 100vh;
+    width : 100%;
+    background-image: url("back.jpeg");
+    display : flex;
+    flex-wrap : wrap;
+    flex-direction: column;
+    gap : 12px;
+    justify-content: center;
+    align-items: center;
+    z-index : 200;
+    position : fixed;
+}
+
+.btn_st{
+    width : 70px;
+    border-radius : 5px;
+    border : 1px solid black;
+    cursor: pointer;
+    height : 20px;
+    font-size : 15px;
+    padding : 5px;
+    padding-bottom: 19px;
+}
+
+.btn_st:hover{
+    box-shadow : 5px 2px 2px rgba(0,0,0,0.6);
+}
+
+.hide{
+    display : none;
+}
+
+.line{
+    height: 0px;
+    width : 50vh;
+    background-color: purple;
+    margin-top : 0px;
+    margin-left : 0px;
+    position: absolute;
+    transform : rotate(0deg);
+    transition : height 1s ease-in;
+}
